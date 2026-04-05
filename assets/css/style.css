@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+
+:root {
+    --brand: #1f4690;
+    --body: #606060;
+    --dark: #19282F;
+    --border-radius: 4px;
+    --shadow: 0px 4px 60px rgba(0, 0, 0, 0.14);
+}
+
+/* reset & helpers */
+body {
+    font-family: 'source sans pro', 'sans-serif';
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1{
+    font-weight: 700;
+    color: var(--dark);
+    font-family: 'domine' ;
+}
+
+h5 {
+    font-weight: 700;
+    color: var(--dark);
+    font-family: 'domine';
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: all 0.4s linear;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: var(--brand);
+}
+
+img {
+    width : 100%;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-intro {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-intro p {
+    max-width: 600px;
+    margin : auto
+}
+
+.custom-card {
+    transition: all 0.4s ease;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.custom-card:hover{
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+
+/* Hero */
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/unsplash2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+#hero h1,
+#hero p {
+    color: white;
+}
+
+#hero h1 {
+    font-weight: 700;
+}
+
+#hero p {
+    max-width: 600px;
+    margin : 12px auto 28px auto;
+    font-size: 18px;
+}
+
+#hero .input-group{
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+}
+
+#hero .input-group input {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#hero .input-group .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#hero .input-group input:focus {
+    box-shadow: none;
+}
+
+/* BTN */
+.btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+.btn-brand {
+    background-color: var(--brand);
+    color : white;
+}
+
+.btn-brand:hover{
+    background-color: var(--brand);
+    color: white;
+}
+
+
+/* navbar */
+.logo-navbar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.navbar .bg-white {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+
+/* services */
+.service {
+    padding: 44px 24px;
+    text-align: center;
+}
+
+.icon-box .ri-pencil-ruler-2-fill{
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon-box .ri-user-3-fill {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon-box .ri-leaf-fill {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon-box .ri-pen-nib-fill {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon-box .ri-edit-box-line {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.icon-box .ri-heart-2-fill {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.service h5{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.service p{
+    font-size: 14px;
+    color: black !important;
+}
+
+/* cta */
+.cta {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/unsplash3.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.cta .btn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    transition: all 0.4s ease;
+}
+.cta h2,
+.cta p {
+    color:white;
+}
+
+/* portfolio */
+.project-wrapper {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-wrapper img {
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.project-wrapper .btn {
+    position: absolute;
+    left : 50%;
+    top : 40%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.project-wrapper:hover .btn-brand{
+    top : 50%;
+    opacity: 1;
+}
+
+.project-wrapper:hover img {
+    transform: scale(1.15);
+    filter: blur(1.5px);
+}
+
+
+
+/* reviews */
+#testimonials {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/unsplash4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#testimonials .section-intro h1, 
+#testimonials .section-intro p{
+    color: white;
+}
+
+.review{
+    padding :34px;
+    border : 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+}
+.review .stars  {
+    color : orange;
+}
+
+.review p{
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.review h6,
+.review small {
+    color: white;
+}
+
+.review span {
+    color: var(--brand);
+}
+
+.review img {
+    width: 75px !important;
+    border-radius: 100px;
+}
+
+#testimonials .owl-dot span{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 12px;
+    height: 12px;
+    transition: all 0.6s ease;
+}
+
+#testimonials .owl-dot.active span {
+    width: 30px;
+    background-color: var(--brand);
+    border-color:var(--brand);
+}
+
+/* team */
+.team-member{
+    text-align: center;
+}
+
+h4 {
+    font-weight: 700;
+    color: var(--dark);
+    font-family: 'domine';
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img {
+    transition: all 0.5s ease;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+    color: var(--brand);
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin: 4px;
+}
+
+.social-links a:hover{
+    background-color: var(--brand);
+    color: white;
+}
+
+.social-links{
+    position: absolute;
+    bottom: 40px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.team-member:hover .social-links{
+    bottom: 20px;
+    opacity: 1;
+}
+
+.team-member:hover img {
+    transform: scale(1.2);
+}
+
+/* milestone */
+#milestone {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/unsplash3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.counter .divider{
+    width: 70px;
+    height: 2px;
+    background-color: var(--brand);
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.counter h1{
+    height: 1;
+}
+
+.counter h1,
+.counter p{
+    color: white;
+}
+
+/* blog */
+.blog-post{
+    text-align: center;
+}
+.blog-post img{
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.blog-post .tag{
+    padding: 4px 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: var(--brand);
+    color: white;
+    border-radius: 3px;
+}
+
+.blog-post-content{
+    padding: 24px;
+}
+
+.blog-post h4{
+    margin-top: 12px;
+}
+
+.blog-post p {
+    color: black !important;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* contact */
+#contact input .form-control{
+    height: 40px;
+}
+
+#contact .form-control{
+    background-color: white;
+    border-color: white;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--brand);
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.col-lg-2 p {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: lowercase;
+    text-align: right;
+}
+
+.col-lg-2 ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: capitalize;
+    font-weight: lighter;
+    text-align: right;
+    font-size: 18px !important;
+}
+
+.col-lg-2 ul{
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.col-lg-4 p {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: lowercase;
+    font-weight: lighter;
+}
+
+.col-lg-2 h6 {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: right;
+}
+
+.col-lg-2 a:hover {
+    color: var(--brand);
+}
+
+.footer-top{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/cover3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 100px;
+        padding-bottom: 100px;   
+}
+
+.footer-top .logo-footer {
+    margin-bottom: 16px;
+}
+
+.footer-bottom{
+    background-color: var(--brand);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+    font-size: 15px;
+}
