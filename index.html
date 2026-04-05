@@ -1,29 +1,554 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset='UTF-8'>
-    <link rel="stylesheet" href="file.css">
-    <link rel="stylesheet" href="script.js">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Quiz </title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/remixicons/fonts/remixicon.css">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Portfolio Part 1</title>
 </head>
-<body>
-<div class='container start'>
-    <h3 class="container_h3"></h3>
-    <div class='start-btn'>Start</div>
-</div>
-<div class='container main'>
-    <div class='question'>2 + 2</div>
-    <div class='ans-row'>
-        <div class='answer'>4</div>
-        <div class='answer'>6</div>
-        <div class='answer'>10</div>
-        <div class='answer'>500</div>
-        <div class='answer'>500</div>
-    </div>
-</div>
 
-<script
-src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js' ></script>
+<body data-bs-spy="scroll" data-bs-target=".navbar" id="home">
+
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/jasabuatugas.jpg" alt="" class="logo-navbar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class = "row">
+        <div class = "col-12">
+          <h1 class = "display-3">Website </h1>
+          <p>Website  </p>
+        </div>
+      </div>
+      <div class = "row">
+        <form action="#" class = "col-lg-6 mx-auto">
+        <!-- <div class="input-group"> -->
+          <!-- <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address"
+            aria-describedby="button-addon2"> -->
+          <button class="btn btn-brand" type="button" id="button-addon2">Lihat Instagram</button>
+        <!-- </div> -->
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id = "services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 section-intro">
+          <h1>Our Services</h1>
+          <p style="font-size: 18px;">Kami menyediakan beberapa layanan yang bisa membantu <i>customers</i> dalam menyelesaikan tugas-tugasnya. Berikut adalah deskripsi layanan yang tim kami sediakan:</p>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-pencil-ruler-2-fill"></i>
+              <h5>Pemrograman</h5>
+              <p > berhubungan dengan pemrograman seperti pemrograman web, java, python, MySQL, atau pembuatan flowchart, mockup dan sejenisnya.</p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-heart-2-fill"></i>
+              <h5>Autocad</h5>
+              <p>Tim kami juga mampu mengerjakan tugas Autocad baik yang 2D maupun 3D dengan harga yang bersaing dengan kompetitor lain. Kalian bisa lihat contoh project autocad yang pernah dikerjakan oleh Tim.</p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-edit-box-line"></i>
+              <h5>Pembuatan Karya Tulis</h5>
+              <p>Pembuatan karya tulis ini sangat luas meliputi puisi, pidato, essay, makalah, jurnal, dan sejenisnya. Jangan khawatir karena kami sudah berpengalaman dalam mengerjakan berbagai karya tulis.</p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-pen-nib-fill"></i>
+              <h5>Excel & Powerpoint</h5>
+              <p>Excel dan Powerpoint adalah salah satu jasa yang sering dipilih oleh <i>customers</i>.  menawarkan hasil yang memuaskan dengan harga yang terjangkau juga. </p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-leaf-fill"></i>
+              <h5>Jawab Soal</h5>
+              <p>Untuk informasi lebih lanjut bisa langsung chat admin di Whatsapp ya.</p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service custom-card">
+            <div class="icon-box">
+              <i class="ri-user-3-fill"></i>
+              <h5>Tugas Lain Sesuai Request</h5>
+              <p>Selain tugas-tugas yang sudah disebutkan tadi, kami juga menerima request tugas dari <i>customers</i>. Kalian yang tertarik bisa langsung menghubungi admin via sosial media / whatsapp yang tersedia di menu Contact. </p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Ayo bergabung dan jadi customer kami!</h2>
+          <p>Tidak perlu khawatir karena dijamin trusted dengan ratusan testimoni dan hasil yang memuaskan.</p>
+        </div>
+        <div class="col-auto mx-auto">
+          <a href="#" class="btn btn-brand ">Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 section-intro">
+          <h1>Our Portfolio</h1>
+          <p>Ayo lihat portofolio dari tim </p>
+        </div>
+      </div>
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="project-wrapper">
+            <img src="./assets/img/p1.jpg" alt="">
+            <a href="#" class="btn btn-brand">Autocad</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="row gy-4">
+            <div class="col-lg-12">
+              <div class="project-wrapper">
+                <img src="./assets/img/p2.jpg" alt="">
+                <a href="#" class="btn btn-brand">Pemrograman</a>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="project-wrapper">
+                <img src="./assets/img/p3.jpg" alt="">
+                <a href="#" class="btn btn-brand">Karya Tulis</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        <div class="col-lg-4">
+          <div class="project-wrapper">
+            <img src="./assets/img/p4.jpg" alt="">
+            <a href="#" class="btn btn-brand">Tugas lain</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <!-- <section id="testimonials">
+    <div class="container">
+    <div class="row">
+      <div class="col-12 section-intro">
+        <h1>Our Testimonials</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+          debitis dolorem, quis.</p>
+      </div>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="review">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+        debitis dolorem, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+        debitis dolorem, quis.</p>
+        <div class="person d-flex align-item-center">
+          <img src="./assets/img/avatar_01.jpg" class="ms-3" alt="" style="margin-bottom: 10px">
+        </div>
+        <small>Web Developer, <span>Johansyah</span></small>
+      </div>
+      <div class="review">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+        debitis dolorem, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+        debitis dolorem, quis.</p>
+        <div class="person d-flex align-item-center">
+          <img src="./assets/img/avatar_02.jpg" class="ms-3" alt="" style="margin-bottom: 10px">
+        </div>
+        <small>Web Developer, <span>Johansyah</span></small>
+      </div>
+      <div class="review">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+          debitis dolorem, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere,
+          dolorum accusantium
+          debitis dolorem, quis.</p>
+        <div class="person d-flex align-item-center">
+          <img src="./assets/img/avatar_03.jpg" class="ms-3" alt="" style="margin-bottom: 10px">
+        </div>
+        <small>Web Developer, <span>Johansyah</span></small>
+      </div>
+      <div class="review">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+          debitis dolorem, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere,
+          dolorum accusantium
+          debitis dolorem, quis.</p>
+        <div class="person d-flex align-item-center">
+          <img src="./assets/img/avatar_04.jpg" class="ms-3" alt="" style="margin-bottom: 10px">
+        </div>
+        <small>Web Developer, <span>Johansyah</span></small>
+      </div>
+      <div class="review">
+        <div class="stars">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+          debitis dolorem, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere,
+          dolorum accusantium
+          debitis dolorem, quis.</p>
+        <div class="person d-flex align-item-center">
+          <img src="./assets/img/avatar_05.jpg" class="ms-3" alt="" style="margin-bottom: 10px">
+        </div>
+        <small >Web Developer, <span>Johansyah</span></small>
+      </div>
+    </div>
+    </div>
+  </section> -->
+
+  <!-- TEAM -->
+  <!-- <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 section-intro">
+          <h1>Our Team</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+            debitis dolorem, quis.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="./assets/img/team-member01.jpg" alt="">
+              <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+              </div>
+            </div>
+            <h4>Jason Khan</h4>
+            <small>Teritory Small Manager</small>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="./assets/img/team-member02.jpg" alt="">
+              <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+              </div>
+            </div>
+            <h4>William Smith</h4>
+            <small>Teritory Small Manager</small>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="./assets/img/team-member03.jpg" alt="">
+              <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+              </div>
+            </div>
+            <h4>Harry Style</h4>
+            <small>Teritory Small Manager</small>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="team-member-img">
+              <img src="./assets/img/team-member04.jpg" alt="">
+              <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+              </div>
+            </div>
+            <h4>Brandon J. Carl</h4>
+            <small>Teritory Small Manager</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- MILESTONE -->
+  <!-- <div id="milestone">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 counter">
+          <h1>8900</h1>
+          <div class="divider"></div>
+          <p class="mb-0">Trusted Clients</p>
+        </div>
+        <div class="col-lg-3 col-sm-6 counter">
+          <h1>99.5%</h1>
+          <div class="divider"></div>
+          <p class="mb-0">Something Here</p>
+        </div>
+        <div class="col-lg-3 col-sm-6 counter">
+          <h1>120</h1>
+          <div class="divider"></div>
+          <p class="mb-0">Theme Designed</p>
+        </div>
+        <div class="col-lg-3 col-sm-6 counter">
+          <h1>50.000</h1>
+          <div class="divider"></div>
+          <p class="mb-0">Subscribers</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- BLOG POSTS -->
+  <!-- <section class="blog bg-light" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 section-intro">
+          <h1>Our Blog Post</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+            debitis dolorem, quis.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="blog-post custom-card">
+            <img src="./assets/img/blog-post1.jpg" alt="">
+            <div class="blog-post-content">
+              <a href="#" class="tag">Branding</a>
+              <h4>Web Design in 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+                debitis dolorem, quis.</p>
+                <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-post custom-card">
+            <img src="./assets/img/blog-post2.jpg" alt="">
+            <div class="blog-post-content">
+              <a href="#" class="tag">Branding</a>
+              <h4>Web Design in 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+                debitis dolorem, quis.</p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="blog-post custom-card">
+            <img src="./assets/img/blog-post3.jpg" alt="">
+            <div class="blog-post-content">
+              <a href="#" class="tag">Branding</a>
+              <h4>Web Design in 2020</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+                debitis dolorem, quis.</p>
+              <a href="#" class="custom-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT -->
+  <!-- <section id="contact" >
+    <div class="container">
+    <div class="row ">
+      <div class="col-12 section-intro ">
+        <h1>Get in touch</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+          debitis dolorem, quis.</p>
+      </div>
+    </div>
+      <div class="row bg-light ">
+        <div class="col-lg-7  ">
+          <form action="#" class="row gy-3 gx-3 p-4  ">
+            <div class="form-group col-lg-6 ">
+              <input type="text" class="form-control" placeholder="Enter your first name">
+            </div>
+            <div class="form-group col-lg-6">
+              <input type="text" class="form-control" placeholder="Enter your last name">
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="email" class="form-control" placeholder="Enter your email adress">
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="text" class="form-control" placeholder="Enter your subject">
+            </div>
+            <div class="form-group col-lg-12">
+              <textarea rows="4" class="form-control" placeholder="Enter message"></textarea>
+            </div>
+            <div class="form-group col-lg-12">
+              <a href="#" class="btn btn-brand">Send Message</a>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d497.78550276220824!2d98.6221622!3d3.5216877!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1659274701997!5m2!1sid!2sid"
+            class="map " style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer>
+  <div class="footer" id="contact">
+    <div class="footer-top bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <!-- <h1 style="color: white;">tes</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil exercitationem facere, dolorum accusantium
+              debitis dolorem, quis.</p>
+              <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+              </div> -->
+          </div>
+          <div class="col-lg-2 offset-lg-5">
+            <h6>Kontak Kami</h6>
+            <ul>
+              <li><a href="#">instagram</a></li>
+              <li><a href="#">twitter</a></li>
+              <li><a href="#">whatsapp</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <p class="mb-0">Design By @</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
+
 </html>
